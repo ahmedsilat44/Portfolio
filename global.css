@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+/* html{
+    scroll-behavior: smooth;
+} */
+
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+
+}
+
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4{
+    font-size: 30px;
+    color: #222;
+}
+
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+
+}
+
+body {
+   
+    width: 100%;
+}
+
+.section-1{
+    padding :100px 80px;
+
+}
+
+#products_a{
+    scroll-behavior: smooth;
+}
+
+#backToTopButton {
+    display: inline-block;
+    background-color: #523D35;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  #backToTopButton::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  #backToTopButton:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #backToTopButton:active {
+    background-color: #555;
+  }
+  #backToTopButton.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+
+/* Nav Bar */
+
+#logo {
+    /* mix-blend-mode:overlay; */
+    height: 82px;
+}
+
+#header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #ffffff ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#navbar {
+    scroll-behavior: smooth;
+    display: flex;
+    gap: 1rem;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    text-decoration: none;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 550;
+    transition: all 0.3s ease;
+}
+
+#navbar li i {
+    transition: all 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: #534539  ;
+}
+
+#navbar li a::after{
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+    width: 0%;
+    height: 2px;
+    background-color: #534539  ;
+    transition: all 0.3s ease;
+}
+#navbar li a.active::after{
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+    width: 40%;
+    height: 2px;
+    background-color: #534539  ;
+    transition: all 0.3s ease;
+}
+
+#navbar li a:hover::after{
+    width: 40%;
+}
+
+#navbar li i:hover {
+    color: #534539 ;
+}
+
+
+/* Home Page */
+
+#hero {
+    background-image: url("./Assets/mags_hero.svg");
+    background-color: #bba58f   ;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80vh;
+    background-size:contain;
+    background-position: top 0% left 50%;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+.cta {
+    padding-top: 30px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    padding-right: 15px;
+    text-transform: uppercase;
+  }
+  
+  .cta svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+  }
+  
+  .cta:hover svg {
+    transform: translateX(0);
+  }
+  
+  .cta:active svg {
+    transform: scale(0.9);
+  }
+  
+  .hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+  }
+  
+  .hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+
+/* Features */
+
+#categories {
+    background-color: #e8d9cd;
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#categories .fe-box{
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 220px;
+    height: 220px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #e7e3e0;
+    margin: 15px 0;
+    transition: all 0.3s ease;
+}
+
+#categories .fe-box:hover{
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.08);
+    border: 1px solid #bba58f;
+}
+
+#categoiries .fe-box img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#categories .fe-box h6{
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #534539;
+    /* background-color: #bba58f; */
+}
+
+
+/* featured-productss */
+
+#featured-products{
+    text-align: center;
+}
+
+#featured-products .pro-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#featured-products .pro{
+    width: 23%;
+    min-width: 250px;
+    min-height: 300px;
+    padding: 10px 12px;
+    border: 1px solid #e7e3e0;
+    cursor: pointer;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    margin: 15px 0;
+    transition: all 0.5s ease;
+    position: relative;
+}
+#featured-products .pro:hover{
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.1);
+}
+
+#featured-products .pro img {
+    margin-top: 5px;
+    width: 80%;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+}
+
+#featured-products .pro img:hover {
+    scale: 1.05;
+    border-radius: 20px;
+}
+
+#featured-products .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#featured-products .pro .des span {
+    color: #606063;
+    font-size: 14px;
+}
+
+#featured-products .pro .des h5 {
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 16px;
+}
+
+#featured-products .pro .cart {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    font-weight: 500;
+    color: #088178;
+    background-color: #e8f6ea;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
