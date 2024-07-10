@@ -60,7 +60,7 @@ body {
 
 #backToTopButton {
     display: inline-block;
-    background-color: #523D35;
+    background-color: #b4bf9fb0;
     width: 50px;
     height: 50px;
     text-align: center;
@@ -100,7 +100,7 @@ body {
 
 #logo {
     /* mix-blend-mode:overlay; */
-    height: 82px;
+    height: 128px;
 }
 
 #header {
@@ -112,8 +112,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 3rem 1rem 2rem;
+    padding: 0 3rem 0 2rem;
+    transition: all 1s ease;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.translucent {
+    background-color: rgba(255, 255, 255, 0.849)  !important;
 }
 
 #navbar {
@@ -179,18 +184,45 @@ body {
 /* Home Page */
 
 #hero {
-    background-image: url("./Assets/mags_hero.svg");
-    background-color: #bba58f   ;
+    overflow: hidden;
+    /* background-image: url("./Assets/hero.png"); */
+    background-color: #b4bf9fb0   ;
     background-repeat: no-repeat;
     width: 100%;
-    height: 80vh;
+    height: 60vh;
     background-size:contain;
-    background-position: bottom 0% left 50%;
+    /* background-size: 25%; */
+    background-position: bottom 0% right 0%;
     padding: 0 120px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+}
+
+.hidden_text{
+    opacity: 0;
+    transform: translateX(-5%);
+    transition: all 1.3s ease;
+
+}
+
+.visible_text{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.hidden_img{
+    opacity: 0;
+    filter: blur(1px);
+    transform: translateY(55%);
+    transition: all 1.3s ease;
+}
+
+.visible_img{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0)
 }
 
 
@@ -385,6 +417,8 @@ body {
 
 
 footer{
+    color: white;
+    position: relative;
     padding: 40px 80px 20px 80px;
     display: flex;
     flex-wrap: wrap;
@@ -429,12 +463,18 @@ footer i{
 }
 
 footer img {
-    height: 120px;
-    width: 120px;
-    margin-bottom: 30px;
+    top: 0%;
+    /* position: absolute; */
+    left: 5%;
+    width: 15%;
+    margin-right: 15%;
+    /* mix-blend-mode: difference; */
+    
+    /* margin-bottom: 5px; */
 }
 
 footer .copyright{
+    margin-top: 20px;
     width: 100%;
     text-align: center;
 }
