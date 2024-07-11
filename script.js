@@ -18,6 +18,7 @@ $(window).scroll(function() {
   }
 });
 
+
 btn.on('click', function(e) {
   e.preventDefault();
   $('html, body').animate({scrollTop:0}, '300');
@@ -28,10 +29,21 @@ function scrollFunction(elementId) {
     element.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
   }
 
+function underLine(element,elementId){
+  console.log(element);
+  const x = element.querySelector(elementId);
+  x.classList.add('underline-right-hover');
+}
+
+function removeUnderLine(element,elementId){
+  const x = element.querySelector(elementId);
+  x.classList.remove('underline-right-hover');
+}
 
 const hiddenImg = document.querySelectorAll('.hidden_img');
 
 const hiddenText = document.querySelectorAll('.hidden_text');
+
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
