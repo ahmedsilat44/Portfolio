@@ -45,31 +45,34 @@ const hiddenImg = document.querySelectorAll('.hidden_img');
 const hiddenText = document.querySelectorAll('.hidden_text');
 
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible_img');
-    }
-    else {
-      entry.target.classList.remove('visible_img');
-    }
-  });
-});
+// const observer = new IntersectionObserver((entries) => {
+//   entries.forEach(entry => {
+//     if (entry.isIntersecting) {
+//       entry.target.classList.add('visible_img');
+//     }
+//     else {
+//       entry.target.classList.remove('visible_img');
+//     }
+//   });
+// });
 
 const observerTxt = new IntersectionObserver((entries) => {
+  var heroImg = document.getElementById("heroImg");
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('visible_img');
+      heroImg.classList.add('visible_img');
     }
     else {
       entry.target.classList.remove('visible_img');
+      heroImg.classList.remove('visible_img');
     }
   });
 });
 
-hiddenImg.forEach((element) => {
-  observer.observe(element);
-});
+// hiddenImg.forEach((element) => {
+//   observer.observe(element);
+// });
 
 hiddenText.forEach((element) => {
   observerTxt.observe(element);
