@@ -18,12 +18,17 @@
             </div>
             <div id="menu">
                 <ul id="navbar">
+                    <li id="close"><i class="fa-solid fa-times fa-lg" onclick="toggleMenu()"></i></li>
                     <li><a class="active" href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li onclick="scrollFunction('featured-products')"><a id="products_a" style="cursor: pointer;" >Products</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><i class="fa-solid fa-cart-shopping fa-lg"></i></li>
+                    <li><i class="fa-solid fa-cart-shopping fa-lg" ></i></li>
                 </ul>
+                <div id="mobile">
+                    <!-- <i class="fa-solid fa-cart-shopping fa-lg"></i> -->
+                    <i class="fa-solid fa-bars fa-lg" id="menuIcon" onclick="toggleMenu()"></i>
+                </div>
             </div>
         </section>
 
@@ -50,87 +55,91 @@
                 </button>
                 
             </div>
-            <img id="heroImg" class="hidden_img" src="/Assets/hero.png" style="">
+            <img id="heroImg" class="hidden_img" src="/Assets/hero.png" >
         </section>
-
-        <!-- <section id="about" style="background-color: #e7e3e0; height: 20vh;">
-            <div id="aboutText">
-                <h2>About Us</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec</p>
-            </div>
-        </section> -->
-
 
         
 
-        <section id="featured-products" class="section-1">
-            <div id="heading">
-                <h4>New Arrivals</h4>
-            </div>
-            <div class="pro-container" >
+        <!-- <section id="vidText" class="section-1" style="margin: 0px 10%;">
+           
             
+        </section> -->
+        
+
+        <section id="featured-products" class="section-1">
+            <div id="mainConatiner">
+                <div id="heading">
+                    <h4>Our Products</h4>
+                </div>
+                <div class="pro-container" >
                 
-                <div class="pro" onmouseover="underLine(this,'#pro_img1')" onmouseout="removeUnderLine(this,'#pro_img1')">
-                    <h4 id="pro_img1" class="underline-right">LARGE WOODEN PLATE</h4>
-                    <img src="Assets/image1.jpg" alt="product" >
+                    
+                    <div class="pro" onmouseover="underLine(this,'#pro_img1')" onmouseout="removeUnderLine(this,'#pro_img1')">
+                        <h4 id="pro_img1" class="underline-right">LARGE WOODEN PLATE</h4>
+                        <img src="Assets/image1.jpg" alt="product" >
+                        
+                    </div>
+                    <div class="pro"  onmouseover="underLine(this,'#pro_img2')" onmouseout="removeUnderLine(this,'#pro_img2')">
+                        <h4 id="pro_img2" class="underline-right" >SMALL WOODEN PLATE</h4>
+                        <img src="Assets/image3.jpg" alt="product" >
+                    
+                    </div>
+                    <div class="pro" onmouseover="underLine(this,'#pro_img1')" onmouseout="removeUnderLine(this,'#pro_img1')">
+                        <h4 id="pro_img1" class="underline-right">WOODEN BOWL</h4>
+                        <img src="Assets/image1.jpg" alt="product" >
+                        
+                    </div>
+                    <!-- <div class="pro"  onmouseover="underLine(this,'#pro_img2')" onmouseout="removeUnderLine(this,'#pro_img2')">
+                        <h4 id="pro_img2" class="underline-right" >WOODEN PLATE</h4>
+                        <img src="Assets/image3.jpg" alt="product" >
+                        
+                    </div> -->
                     
                 </div>
-                <div class="pro"  onmouseover="underLine(this,'#pro_img2')" onmouseout="removeUnderLine(this,'#pro_img2')">
-                    <h4 id="pro_img2" class="underline-right" >SMALL WOODEN PLATE</h4>
-                    <img src="Assets/image3.jpg" alt="product" >
-                
-                </div>
-                <div class="pro" onmouseover="underLine(this,'#pro_img1')" onmouseout="removeUnderLine(this,'#pro_img1')">
-                    <h4 id="pro_img1" class="underline-right">WOODEN BOWL</h4>
-                    <img src="Assets/image1.jpg" alt="product" >
-                    
-                </div>
-                <!-- <div class="pro"  onmouseover="underLine(this,'#pro_img2')" onmouseout="removeUnderLine(this,'#pro_img2')">
-                    <h4 id="pro_img2" class="underline-right" >WOODEN PLATE</h4>
-                    <img src="Assets/image3.jpg" alt="product" >
-                    
-                </div> -->
-                
             </div>
+            
         </section>
 
 
+        
         <section id="vidText" class="section-1" style="margin: 0px 10%;">
             <div class="row" >
+                <div id="contentWrapper" style="align-items: center;width: 100%;">
+                    <div id="text" style="width: 80%;">
+                        <h4 class="vidHeading" >Our Process</h4>
+                        <p>At Pure Woodique, we are dedicated to creating beautiful and functional kitchenware from upcycled materials. Our mission is to combine sustainability with craftsmanship, providing unique pieces that tell a story. Each item is handmade with care, ensuring quality and individuality in every piece.</p>
+                    </div>
+                </div>
                 <div id="vid" >
-                    <video height="500px" loop autoplay muted >
+                    <video loop autoplay muted onloadstart="this.playbackRate = 0.75;">
                         <source src="Assets/vid1.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
-                <div id="contentWrapper" style="align-items: center;width: 100%;">
-                    <div id="text" style="width: 80%;">
-                        <h4 >Our Process</h4>
-                        <p>At Pure Woodique, we are dedicated to creating beautiful and functional kitchenware from upcycled materials. Our mission is to combine sustainability with craftsmanship, providing unique pieces that tell a story. Each item is handmade with care, ensuring quality and individuality in every piece.</p>
-                    </div>
-                </div>
+               
             </div>
             <div class="row" >
                 <div id="contentWrapper" style="align-items: center;width: 100%;">
                     <div id="text" style="width: 80%;">
-                        <h4>Handling Wooden Products</h4>
-                        <p>Wooden kitchenware is not only beautiful but also durable when properly cared for. Follow these simple steps to ensure your wooden products last a lifetime:</p>
+                        <h4 class="vidHeading">Care</h4>
                         <ul>
-                            <li><strong>Washing</strong>: Hand wash your wooden items with mild soap and warm water. Avoid soaking them for long periods or placing them in the dishwasher, as this can cause the wood to crack and warp.</li>
-                            <li><strong>Drying</strong>: Immediately after washing, dry your wooden products with a clean towel. Let them air dry completely before storing them.</li>
-                            <li><strong>Storing</strong>: Store wooden kitchenware in a dry place away from direct sunlight and extreme temperatures. This helps to prevent warping and cracking.</li>
+                            <li><p>Hand wash your wooden items with mild soap and warm water. Avoid soaking them for long periods or placing them in the dishwasher, as this can cause the wood to crack and warp.</p></li>
+                            <li><p>Immediately after washing, dry your wooden products with a clean towel. Let them air dry completely before storing them.</p></li>
+                            <li><p>Store wooden kitchenware in a dry place away from direct sunlight and extreme temperatures. This helps to prevent warping and cracking.</p></li>
                             
                         </ul>
                     </div>
                 </div>
                 <div id="vid" >
-                    <video height="500px" loop autoplay muted >
+                    <video loop autoplay muted onloadstart="this.playbackRate = 0.75;" >
                         <source src="Assets/vid2.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
             </div>
         </section>
+
+        
 
 
 
@@ -168,9 +177,9 @@
 
 
         <footer id="footer" style="background-color: #354238;">
-            <img src="Assets/PureWoodique_txtWhite.svg" alt="logo" >
             
-            <div id="footerFirstCol" class="col" style="width: 20%;">
+            <img  src="Assets/PureWoodique_txtWhite.svg" alt="logo" >
+            <div  id="footerFirstCol" class="col" >
                 <h4>Quick Links</h4>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -180,18 +189,8 @@
                 </ul>
             </div>
 
-            <!-- <div class="col" style="width: 20%;">
-                <h4>Products</h4>
-                <ul>
-                    <li><a href="#">Woodware</a></li>
-                    <li><a href="#">Toys and Games</a></li>
-                    <li><a href="#">Crochet</a></li>
-                    <li><a href="#">Kitchenware</a></li>
-                    <li><a href="#">Hair Accessories</a></li>
-                </ul>
-            </div>
-            -->
-            <div id="footerSecondCol" class="col" style="width: 20%;">
+
+            <div id="footerSecondCol" class="col">
             
                 <h4>Contact</h4>
                 <p><strong>Address:</strong> 123, XYZ Street, ABC City</p>
@@ -204,9 +203,9 @@
                     </div>
                 </div>
             </div>
+            
 
-
-            <div class="copyright">
+            <div style="order: 2;" class="copyright">
                 <p>&copy; 2024 PureWoodique. All rights reserved.</p>
             </div>
         
