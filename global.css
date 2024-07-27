@@ -196,10 +196,11 @@ body {
 #navbar #close {
     position: absolute;
     top: 30px;
-    right: 30px;
+    left: 0px;
     font-size: 20px;
     display: none;
 }
+
 
 
 /* #endregion */
@@ -647,7 +648,98 @@ footer .copyright{
 
 
 
+/* #region cart */
 
+.cd-cart-items li {
+    position: relative;
+    padding: 1em;
+    border-top: 1px solid #e8e8e8;
+    padding: 24px;
+}
+
+
+.cd-qty, .cd-price {
+    color: #a5aebc;
+}
+
+.cd-price {
+    margin-top: .4em;
+}
+
+.cd-item-remove {
+    cursor: pointer;
+    position: absolute;
+    right: 1em;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-remove-item.svg') no-repeat center center;
+
+    /* .no-touch &:hover {
+        background-color: #e6e6e6;
+    } */
+}
+
+
+.js-menu__context {
+    background: rgba(0,0,0, 0.5);
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    transition: opacity 0.5s, visibility 0.5s;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: 40000;
+  }
+  
+  .js-menu {
+    color: #000;
+    position: absolute;
+    height: 100%;
+    width: 560px;
+    max-width: 85vw;
+    /* padding: 12px; */
+    margin: 0;
+    background: #fff;
+    z-index: 99;
+    overflow-y: auto;
+  
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    transition: all 0.5s, transform 0.5s;
+  }
+  
+  .js-menu--left {
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+  }
+  .js-menu--right {
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+      position: absolute;
+      right: 0;
+  }
+  .js-menu__open {
+    cursor: pointer;
+  }
+  
+  .js-menu__close {
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 20px;
+  }
+  
+  .js-menu__expanded {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
+  }
+/* #endregion */
 
 
 
@@ -736,7 +828,7 @@ footer .copyright{
         right: -300px;
         height: 100vh;
         width: 300px;
-        background-color: #ebeee7;
+        background-color: #ffffff;
         box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
         padding: 80px 0px 0px 10px;
         transition: all 0.3s ease;
@@ -903,3 +995,5 @@ footer .copyright{
 }
 
 /* #endregion */
+
+
