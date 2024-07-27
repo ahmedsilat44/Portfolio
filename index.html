@@ -14,13 +14,13 @@
         <a id="backToTopButton"></a>
         <section id="header">
             <div id="logoDiv">
-                <a href="#"><img id="logo" src="Assets/PureWoodique_txt.svg" alt="logo"></a>
+                <a href="/"><img id="logo" src="Assets/PureWoodique_txt.svg" alt="logo"></a>
                 <!-- <h6>Pure Woodique</h6> -->
             </div>
             <div id="menu">
                 <ul id="navbar">
                     <li id="close"><i class="fa-solid fa-times fa-lg" onclick="toggleMenu()"></i></li>
-                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a class="active" href="/">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li onclick="scrollFunction('featured-products')"><a id="products_a" style="cursor: pointer;" >Products</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -75,19 +75,19 @@
                 <div class="pro-container" >
                 
                     
-                    <div class="pro" onmouseover="underLine(this,'#pro_img1')" onmouseout="removeUnderLine(this,'#pro_img1')">
+                    <div id="WP001" onclick="document.location=this.id+'.html';return false;" class="pro" onmouseover="underLine(this,'#pro_img1')" onmouseout="removeUnderLine(this,'#pro_img1')">
                         <h4 id="pro_img1" class="underline-right">LARGE WOODEN PLATE</h4>
-                        <img src="Assets/image1.jpg" alt="product" >
+                        <img src="Assets/image2.jpg" alt="product" >
                         
                     </div>
-                    <div class="pro"  onmouseover="underLine(this,'#pro_img2')" onmouseout="removeUnderLine(this,'#pro_img2')">
+                    <div id="WP002" onclick="document.location=this.id+'.html';return false;" class="pro"  onmouseover="underLine(this,'#pro_img2')" onmouseout="removeUnderLine(this,'#pro_img2')">
                         <h4 id="pro_img2" class="underline-right" >SMALL WOODEN PLATE</h4>
-                        <img src="Assets/image3.jpg" alt="product" >
+                        <img src="Assets/image1.jpg" alt="product" >
                     
                     </div>
-                    <div class="pro" onmouseover="underLine(this,'#pro_img1')" onmouseout="removeUnderLine(this,'#pro_img1')">
+                    <div id="WB001" onclick="document.location=this.id+'.html';return false;" class="pro" onmouseover="underLine(this,'#pro_img1')" onmouseout="removeUnderLine(this,'#pro_img1')">
                         <h4 id="pro_img1" class="underline-right">WOODEN BOWL</h4>
-                        <img src="Assets/image1.jpg" alt="product" >
+                        <img src="Assets/image3.jpg" alt="product" >
                         
                     </div>
                     <!-- <div class="pro"  onmouseover="underLine(this,'#pro_img2')" onmouseout="removeUnderLine(this,'#pro_img2')">

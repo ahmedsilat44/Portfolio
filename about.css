@@ -18,6 +18,9 @@ p {
     color: #777;
 }
 
+body{
+    background-color: #fafafa;
+}
 
 #about {
     padding: 20px;
