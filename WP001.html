@@ -20,6 +20,7 @@
                     <p id="emptyText" style="padding-left: 24px;">You have no items in your cart.</p>
                     <div id="cartItem">
                         <ul id="cartList" class="cd-cart-items">
+                            
                         </ul>
                     </div>
                     <div id="Checkout" style="position: fixed;bottom: 0;width: 100%;">
@@ -68,12 +69,18 @@
                    <div class="singleProdDetails">
                         <h3 class="prodName"> Large Rosewood Plate</h3>
                         <h4 class="priceText"> PKR 3500</h4>
-                        <button id="addToCartBTn" onclick="addToCart(JSON.stringify({'item':'Large Rosewood Plate','quantity': 1, 'price': 3500 }))">ADD TO CART</button>
+                        <!-- <button id="addToCartBTn" >ADD TO CART</button> -->
+                        <button class="cart-button" onclick="addToCart(JSON.stringify({'item':'Large Rosewood Plate','quantity': 1, 'price': 3500 }))">
+                            <span class="add-to-cart">Add to cart</span>
+                            <span class="added">Added</span>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-box"></i>
+                        </button>
                    </div>
-                   <p class="prodDesc">Introducing our exquisite rosewood plates, the perfect blend of natural beauty and artisanal craftsmanship for your kitchen.</p>
-                   <p class="prodDesc">With deep, rich hues and a smooth, polished finish, these plates will captivate you with their timeless elegance. Whether you're hosting a special dinner or enjoying a casual meal, our rosewood plates add a touch of refined luxury to any setting.</p>
-                   <p class="prodDesc">The intricate grain patterns and natural resilience of rosewood make these plates a standout addition to your kitchenware. Durable and easy to maintain, they promise to be a cherished part of your dining experience for years to come.</p>
-                   <p class="prodDesc">Each plate is one-of-a-kind, showcasing unique color variations and patterns inherent to rosewood. They are handcrafted from sustainably sourced materials and polished with care to highlight the wood's natural beauty.</p>
+                   <p class="prodDesc">Introducing our rosewood plates, a perfect blend of natural beauty and artisanal craftsmanship for your kitchen.</p>
+                   <p class="prodDesc">With deep, rich hues and a smooth finish, these plates offer timeless elegance. Whether for a special dinner or a casual meal, they add refined luxury to any setting.</p>
+                   <p class="prodDesc">Rosewood’s intricate grain patterns and durability make these plates a standout addition to your kitchenware. Each one-of-a-kind plate is handcrafted from sustainably sourced materials and polished to highlight the wood's natural beauty.</p>
+                   
                    
                 </div>
                 

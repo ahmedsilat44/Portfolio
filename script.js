@@ -184,6 +184,10 @@ $('.js-menu__context, .js-menu__close').on('click', function(event){
 
 
 function checkout(){
+  if (cart.length == 0) {
+    alert("Please add items to the cart");
+    return;
+  }
   var total = 0;
   whatsappText = "Hi, I would like to order the following items: \n";
   for (let i = 0; i < cart.length; i++) {
@@ -201,3 +205,21 @@ $('.extraImg').on('click', function(){
   var img = $(this).attr('src');
   document.getElementById('MainImg').src = img;
 });
+
+
+
+
+
+const cartButtons = document.querySelectorAll('.cart-button');
+
+cartButtons.forEach(button => {
+	button.addEventListener('click', cartClick);
+});
+
+function cartClick() {
+	let button = this;
+	button.classList.add('clicked');
+  setTimeout(function(){
+    button.classList.remove('clicked');
+  }, 2000);
+}
