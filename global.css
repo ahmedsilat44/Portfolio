@@ -226,7 +226,7 @@ body {
 }
 
 #hero img {
-    width: 800px;position :absolute; right:  10% ; top: -55%;rotate: 220deg;z-index: 0;
+    width: 800px;position :absolute; right:  10% ; top: -55%;rotate: 180deg;z-index: 0;
 }
 
 #hero h1{
