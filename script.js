@@ -196,3 +196,8 @@ function checkout(){
   window.open(url, '_blank');
   
 }
+
+$('.extraImg').on('click', function(){
+  var img = $(this).attr('src');
+  document.getElementById('MainImg').src = img;
+});
