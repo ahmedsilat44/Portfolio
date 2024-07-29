@@ -56,16 +56,6 @@ const hiddenImg = document.querySelectorAll('.hidden_img');
 const hiddenText = document.querySelectorAll('.hidden_text');
 
 
-// const observer = new IntersectionObserver((entries) => {
-//   entries.forEach(entry => {
-//     if (entry.isIntersecting) {
-//       entry.target.classList.add('visible_img');
-//     }
-//     else {
-//       entry.target.classList.remove('visible_img');
-//     }
-//   });
-// });
 
 const observerTxt = new IntersectionObserver((entries) => {
   var heroImg = document.getElementById("heroImg");
@@ -81,9 +71,6 @@ const observerTxt = new IntersectionObserver((entries) => {
   });
 });
 
-// hiddenImg.forEach((element) => {
-//   observer.observe(element);
-// });
 
 hiddenText.forEach((element) => {
   observerTxt.observe(element);
@@ -129,14 +116,6 @@ function clearCart() {
   console.log(cart);
 }
 
-
-
-//Usage:
-// add js-menu__open class to menu icon
-// add data-menu attr with the id of the menu to be expanded
-// add id to the menu element and the js-menu class
-// wrap menu in js-menu__context class
-// add js-menu--right or js-menu--left to set the slide direction 
 
 jQuery(function($){
   $('.js-menu__open').on('click', function(){

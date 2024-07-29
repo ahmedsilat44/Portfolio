@@ -953,7 +953,7 @@ footer .copyright{
 
 @media screen and (max-width: 480px) {
     #hero img {
-        width: 400px;
+        width: 100%;
         top: -35%;
     }
     #featured-products .pro{

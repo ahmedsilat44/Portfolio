@@ -54,24 +54,51 @@
         <section id="vidText" class="section-1" >
             <div class="row" >
                 <div id="vid" >
-                    <img src="Assets/Woodique/image00001.jpeg" alt="image1" >
-                    <img class="extraImg" src="Assets/Woodique/image00005.jpeg" alt="image1" >
-                    <img class="extraImg" src="Assets/Woodique/image00008.jpeg" alt="image1" >
-                    <img class="extraImg" src="Assets/Woodique/image00011.jpeg" alt="image1" >
-                    <img class="extraImg" src="Assets/Woodique/image00019.jpeg" alt="image1" >
-                    <img class="extraImg" src="Assets/Woodique/image00023.jpeg" alt="image1" >
+                    <img src="Assets/Woodique/image00001.jpeg" id="MainImg" alt="image1" >
+                    <div id="miniImgRow">
+                        <img class="extraImg" src="Assets/Woodique/image00001.jpeg" alt="image1" >
+                        <img class="extraImg" src="Assets/Woodique/image00005.jpeg" alt="image1" >
+                        <img class="extraImg" src="Assets/Woodique/image00008.jpeg" alt="image1" >
+                        <img class="extraImg" src="Assets/Woodique/image00019.jpeg" alt="image1" >
+                        <img class="extraImg" src="Assets/Woodique/image00023.jpeg" alt="image1" >
+                    </div>
+                    
                 </div>
                 <div id="contentWrapper" >
                    <div class="singleProdDetails">
-                        <h4> Small Rosewood Plate</h4>
-                        <h3> PKR 2000</h3>
-                        <button id="addToCartBTn" onclick="addToCart(JSON.stringify({'item':'Small Rosewood Plate','quantity': 1, 'price': 2000  }))">ADD TO CART</button>
-                   </div>
+                        <h3 class="prodName"> Small Rosewood Plate</h3>
+                        <h4 class="priceText"> PKR 2500</h4>
+                        <button class="cart-button" onclick="addToCart(JSON.stringify({'item':'Small Rosewood Plate','quantity': 1, 'price': 2500 }))">
+                            <span class="add-to-cart">Add to cart</span>
+                            <span class="added">Added</span>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-box"></i>
+                        </button>
+                    </div>
+                    <p class="prodDesc">Introducing our exquisite rosewood plates, the perfect blend of natural beauty and artisanal craftsmanship for your kitchen.</p>
+                    <p class="prodDesc">With deep, rich hues and a smooth, polished finish, these plates will captivate you with their timeless elegance. Whether you're hosting a special dinner or enjoying a casual meal, our rosewood plates add a touch of refined luxury to any setting.</p>
+                    <p class="prodDesc">The intricate grain patterns and natural resilience of rosewood make these plates a standout addition to your kitchenware. Durable and easy to maintain, they promise to be a cherished part of your dining experience for years to come.</p>
+                    <p class="prodDesc">Each plate is one-of-a-kind, showcasing unique color variations and patterns inherent to rosewood. They are handcrafted from sustainably sourced materials and polished with care to highlight the wood's natural beauty.</p>
+                
                 </div>
+            </div>
                 
                
-            </div>
             
+            <div class="row" style="display: flex;" >
+                <div id="contentWrapper" style="align-items: center;width: 100%;">
+                    <div id="text" style="width: 80%;">
+                        <h3 class="vidHeading" style="text-align: center;">Woodware Care</h3>
+                        <ul>
+                            <li><p>Hand wash your wooden items with mild soap and warm water. Avoid soaking them for long periods or placing them in the dishwasher, as this can cause the wood to crack and warp.</p></li>
+                            <li><p>Immediately after washing, dry your wooden products with a clean towel. Let them air dry completely before storing them.</p></li>
+                            <li><p>Store wooden kitchenware in a dry place away from direct sunlight and extreme temperatures. This helps to prevent warping and cracking.</p></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
            
         </section>
 
