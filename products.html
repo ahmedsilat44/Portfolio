@@ -3,13 +3,16 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Rosewood Plate</title>
+        <title>Home</title>
         <link rel="icon" type="image/x-icon" href="/Assets/PureWoodique.svg">
-        <!-- <link rel="stylesheet" href="global.css"> -->
-        <link rel="stylesheet" href="prod.css">
+        <link rel="stylesheet" href="global.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="./script.js" defer></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <style>
+            
+
+        </style>
     </head>
     <body>
         <a id="backToTopButton"></a>
@@ -36,7 +39,7 @@
             </div>
             <div id="menu">
                 <ul id="navbar">
-                    <li id="close"><i class="fa-solid fa-times fa-lg" onclick="toggleMenu()"></i></li>
+                    <li id="close"><i style="font-size: 30px;font-weight: 500;" onclick="toggleMenu()">&#8592;</i></li>
                     <li><a  href="/">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a class="active" href="products.html" id="products_a" style="cursor: pointer;" >Products</a></li>
@@ -49,57 +52,38 @@
             </div>
         </section>
 
+        
 
-        <section id="vidText" class="section-1" >
-            <div class="row" >
-                <div id="vid" >
-                    <img src="Assets/Woodique/image00001.jpeg" id="MainImg" alt="image1" >
-                    <div id="miniImgRow">
-                        <img class="extraImg" src="Assets/Woodique/image00001.jpeg" alt="image1" >
-                        <img class="extraImg" src="Assets/Woodique/image00005.jpeg" alt="image1" >
-                        <img class="extraImg" src="Assets/Woodique/image00008.jpeg" alt="image1" >
-                        <img class="extraImg" src="Assets/Woodique/image00019.jpeg" alt="image1" >
-                        <img class="extraImg" src="Assets/Woodique/image00023.jpeg" alt="image1" >
+        <section id="featured-products" class="section-1">
+            <div id="mainConatiner">
+                <div id="heading">
+                    <h4>Our Products</h4>
+                </div>
+                <div class="pro-container" >
+                
+                    
+                    <div id="WP001" onclick="document.location=this.id+'.html';return false;" class="pro" onmouseover="underLine(this,'#pro_img1')" onmouseout="removeUnderLine(this,'#pro_img1')">
+                        <h4 id="pro_img1" class="underline-right">LARGE WOODEN PLATE</h4>
+                        <img src="Assets/image2.jpg" alt="product" >
+                        
+                    </div>
+                    <div id="WP002" onclick="document.location=this.id+'.html';return false;" class="pro"  onmouseover="underLine(this,'#pro_img2')" onmouseout="removeUnderLine(this,'#pro_img2')">
+                        <h4 id="pro_img2" class="underline-right" >SMALL WOODEN PLATE</h4>
+                        <img src="Assets/image1.jpg" alt="product" >
+                    
+                    </div>
+                    <div id="WB001" onclick="document.location=this.id+'.html';return false;" class="pro" onmouseover="underLine(this,'#pro_img1')" onmouseout="removeUnderLine(this,'#pro_img1')">
+                        <h4 id="pro_img1" class="underline-right">WOODEN BOWL</h4>
+                        <img src="Assets/image3.jpg" alt="product" >
+                        
                     </div>
                     
                 </div>
-                <div id="contentWrapper" >
-                   <div class="singleProdDetails">
-                        <h3 class="prodName"> Large Rosewood Plate</h3>
-                        <h4 class="priceText"> PKR 3500</h4>
-                        <button class="cart-button" onclick="addToCart(JSON.stringify({'item':'Large Rosewood Plate','quantity': 1, 'price': 3500 }))">
-                            <span class="add-to-cart">Add to cart</span>
-                            <span class="added">Added</span>
-                            <i class="fas fa-shopping-cart"></i>
-                            <i class="fas fa-box"></i>
-                        </button>
-                   </div>
-                   <p class="prodDesc">Introducing our exquisite rosewood plates, the perfect blend of natural beauty and artisanal craftsmanship for your kitchen.</p>
-                   <p class="prodDesc">With deep, rich hues and a smooth, polished finish, these plates will captivate you with their timeless elegance. Whether you're hosting a special dinner or enjoying a casual meal, our rosewood plates add a touch of refined luxury to any setting.</p>
-                   <p class="prodDesc">The intricate grain patterns and natural resilience of rosewood make these plates a standout addition to your kitchenware. Durable and easy to maintain, they promise to be a cherished part of your dining experience for years to come.</p>
-                   <p class="prodDesc">Each plate is one-of-a-kind, showcasing unique color variations and patterns inherent to rosewood. They are handcrafted from sustainably sourced materials and polished with care to highlight the wood's natural beauty.</p>
-                   
-                </div>
-                
-               
             </div>
-            <div class="row" style="display: flex;" >
-                <div id="contentWrapper" style="align-items: center;width: 100%;">
-                    <div id="text" style="width: 80%;">
-                        <h3 class="vidHeading" style="text-align: center;">Woodware Care</h3>
-                        <ul>
-                            <li><p>Hand wash your wooden items with mild soap and warm water. Avoid soaking them for long periods or placing them in the dishwasher, as this can cause the wood to crack and warp.</p></li>
-                            <li><p>Immediately after washing, dry your wooden products with a clean towel. Let them air dry completely before storing them.</p></li>
-                            <li><p>Store wooden kitchenware in a dry place away from direct sunlight and extreme temperatures. This helps to prevent warping and cracking.</p></li>
-                            
-                        </ul>
-                    </div>
-                </div>
-                
-            </div>
+            
         </section>
 
-        
+
 
 
         <footer id="footer" style="background-color: #354238;">
