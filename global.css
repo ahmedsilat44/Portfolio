@@ -756,6 +756,18 @@ footer .copyright{
     }
 }
 
+@media screen and (max-height: 800px) {
+    #hero img {
+        width: 600px;
+        /* right: 0%; */
+    }
+    #featured-products .pro{
+        width: 200px;
+        height: 200px;
+    }
+    
+}
+
 @media screen and (max-width: 1024px) {
     #hero img {
         width: 600px;

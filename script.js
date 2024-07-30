@@ -175,7 +175,7 @@ function checkout(){
     whatsappText += element.quantity + "x " + element.item + " PKR " + element.quantity * element.price + "\n";
   }
   whatsappText += "Total: PKR " + total;
-  var url = "https://wa.me/923112206216?text=" + encodeURIComponent(whatsappText);
+  var url = "https://wa.me/923322174309?text=" + encodeURIComponent(whatsappText);
   window.open(url, '_blank');
   
 }
