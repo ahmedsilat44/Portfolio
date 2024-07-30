@@ -18,7 +18,7 @@
         <a id="backToTopButton"></a>
         <section id="header" style="height: 135px">
             <div id="logoDiv">
-                <a href="/" style="font-size: 35px;text-decoration: none;color: #222;font-weight: 700;font-family: 'Poppins', sans-serif">AHMED SILAT</a>
+                <a href="/"><h1>A.S</h1></a>
                 <!-- <h6>Pure Woodique</h6> -->
             </div>
             <div id="menu">
@@ -35,9 +35,10 @@
             </div>
         </section>
 
-        <section id="hero" style="overflow: hidden;position: relative;" >
-            <div id="heroText" class="hidden_text" style="z-index: 100;">
-                <h4 >Welcome</h4>
+        <section id="hero" style="overflow: hidden;position: relative;display: flex;" >
+            <div id="heroTextContainer" class="hidden_text" style="z-index: 100;">
+                <div id="heroText">
+                    <h4 >Welcome</h4>
                 <h1 >Muhammad Ahmed Silat</h2>
                 <button class="cta" onclick="window.open('https:\/\/rxresu.me/talisdemha/software-engineer', '_blank')">
                     <span class="hover-underline-animation"> Resume </span>
@@ -56,9 +57,13 @@
                     ></path>
                     </svg>
                 </button>
+                </div>
+                
                 
             </div>
-            <img id="heroImg" class="hidden_img" src="/Assets/hero.svg" >
+            <div id="heroImgContainer">
+                <img id="heroImg" class="hidden_img" src="/Assets/hero.svg" >
+            </div>
         </section>
 
         
@@ -92,11 +97,33 @@
         </section>
 
 
-        <section id="projects" class="section-1" style="margin: 0px 10%;">
-            <div id="heading">
+        <!-- <section id="projects" class="section-1">
+            <div id="mainConatiner">
+                <div id="heading">
                     <h4>My Projects</h4>
                 </div>
-        </section>
+                <div class="pro-container" >
+                
+                    
+                    <div id="WP001" class="pro" onmouseover="underLine(this,'#pro_img1')" onmouseout="removeUnderLine(this,'#pro_img1')">
+                        <h4 id="pro_img1" class="underline-right">LARGE WOODEN PLATE</h4>
+                        <img src="Assets/image2.jpg" alt="product" >
+                        
+                    </div>
+                    <div id="WP002" class="pro"  onmouseover="underLine(this,'#pro_img2')" onmouseout="removeUnderLine(this,'#pro_img2')">
+                        <h4 id="pro_img2" class="underline-right" >SMALL WOODEN PLATE</h4>
+                        <img src="Assets/image1.jpg" alt="product" >
+                    
+                    </div>
+                    <div id="WB001" class="pro" onmouseover="underLine(this,'#pro_img1')" onmouseout="removeUnderLine(this,'#pro_img1')">
+                        <h4 id="pro_img1" class="underline-right">WOODEN BOWL</h4>
+                        <img src="Assets/image3.jpg" alt="product" >
+                        
+                    </div>
+                 
+                </div>
+            </div>
+        </section> -->
         
 <!-- 
         <section id="featured-products" class="section-1">

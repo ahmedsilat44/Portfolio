@@ -74,3 +74,13 @@ function toggleMenu(){
   }
 }
 
+function underLine(element,elementId){
+  console.log(element);
+  const x = element.querySelector(elementId);
+  x.classList.add('underline-right-hover');
+}
+
+function removeUnderLine(element,elementId){
+  const x = element.querySelector(elementId);
+  x.classList.remove('underline-right-hover');
+}
