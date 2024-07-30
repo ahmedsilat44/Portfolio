@@ -330,6 +330,7 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
+    margin: 0px 10% 200px 10%;
 }
 
 .about-containers{
@@ -380,49 +381,28 @@ body {
 
 /* #endregion */
 
-/* #region Features */
+/* #region Projects */
 
-#categories {
-    background-color: #e8d9cd;
-    padding: 100px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+#heading {
+    text-align:center;
+    margin-bottom: 20px;
+  text-transform:uppercase;
+  font-size:26px; letter-spacing:1px;
+  
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: 16px 0;
+  grid-gap: 22px;
+  position: relative;
 }
 
-#categories .fe-box{
-    border-radius: 1000px;
-    background-color: #ffffff;
-    width: 220px;
-    height: 220px;
-    text-align: center;
-    padding: 25px 15px;
-    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
-    border: 1px solid #e7e3e0;
-    margin: 15px 0;
-    transition: all 0.3s ease;
+#heading::before,
+#heading::after {
+    content: " ";
+    padding-top: 22px;
+    display: block;
+    border-bottom: 2px solid #0000009a;
 }
-
-#categories .fe-box:hover{
-    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.08);
-    border: 1px solid #bba58f;
-}
-
-#categoiries .fe-box img{
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-#categories .fe-box h6{
-    margin-top: 20px;
-    padding: 9px 8px 6px 8px;
-    line-height: 1;
-    border-radius: 4px;
-    color: #394953;
-    /* background-color: #bba58f; */
-}
-
 
 /* #endregion */
 
@@ -819,19 +799,19 @@ footer .copyright{
     }
 }
 
-@media screen and (max-height: 800px) {
-    #hero img {
-        width: 600px;
-        /* right: 0%; */
-    }
-    #featured-products .pro{
-        width: 200px;
-        height: 200px;
-    }
-    
-}
+
 
 @media screen and (max-width: 1024px) {
+
+    .section-container{
+        flex-direction: column;
+    }
+
+    .section-pic-container{
+        display: flex;
+        justify-content: center;
+    }
+
     #hero img {
         width: 600px;
         right: 0%;
