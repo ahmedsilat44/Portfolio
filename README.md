@@ -21,4 +21,5 @@ This website is designed to provide an overview of my background, skills, projec
 - CSS3
 - JavaScript
 
-![PureWoodique](https://github.com/user-attachments/assets/c39aefb5-e3af-4ff0-995c-fc2c57a9a025)
+![image](https://github.com/user-attachments/assets/a9f3da76-5602-4f41-a369-d06593be2afc)
+
