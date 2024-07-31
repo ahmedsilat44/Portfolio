@@ -362,6 +362,10 @@ body {
     margin: 0px 10% 200px 10%;
 }
 
+#about h2{
+    line-height: 28px;
+}
+
 .about-containers{
     gap: 2rem;
     margin: 2rem 0;
