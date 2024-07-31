@@ -510,6 +510,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     background-color: #353942;
+    justify-content: center;
 }
 
 footer .col{
