@@ -363,7 +363,9 @@ body {
 }
 
 #about h2{
-    line-height: 28px;
+    font-size: 42px;
+    line-height: 50px;
+    padding-bottom: 10px;
 }
 
 .about-containers{
