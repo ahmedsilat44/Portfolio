@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.cdnfonts.com/css/provicali');
-@import url('https://fonts.cdnfonts.com/css/albra');
+
 
 
 
@@ -505,7 +504,7 @@ footer{
     padding: 40px 80px 20px 80px;
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
+    background-color: #353942;
 }
 
 footer .col{
@@ -695,8 +694,16 @@ footer .copyright{
         padding: 0 20px;
     }
 
-
+    .section-1{
+        padding :100px 0px;
+    }
     
+    .projects-container{
+        margin: 0px 5%;
+    }
+    .project-container{
+        margin: 0;
+    }
 
     h1{
         font-size: 34px;
@@ -735,6 +742,7 @@ footer .copyright{
     footer  {
         align-items: center;
         justify-content: center;
+        padding: 40px 0;
     }
     footer .col {
         align-items: center;
@@ -768,7 +776,18 @@ footer .copyright{
         margin: 0;
     }
 
-    
+    #projects p{
+        --max-lines: 4;
+        display: -webkit-box;
+        -webkit-line-clamp: var(--max-lines);
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    #projects span{
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
 
     .about-containers{
         flex-direction: column;
@@ -801,10 +820,12 @@ footer .copyright{
         font-size: 16px;
     }
 
-    .project-details-container p{
-        text-overflow: ellipsis;
-        
+    
+    
+    footer .col {
+        margin: 0px 0px 20px 0px;
     }
+
 
 
     h1{
