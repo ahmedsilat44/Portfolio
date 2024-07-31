@@ -30,6 +30,8 @@ h2{
     color: #222;
 }
 
+
+
 h4{
     font-size: 30px;
     color: #222;
@@ -763,8 +765,10 @@ footer .copyright{
     }
 
     .section-1{
-        margin: auto 0;
+        margin: 0;
     }
+
+    
 
     .about-containers{
         flex-direction: column;
@@ -785,6 +789,23 @@ footer .copyright{
         height: 250px;
     }
 
+    .project-image-container{
+        height: 40%;
+    }
+
+    .project-details-container{
+        height: 50%;
+    }
+
+    .project-details-container h3{
+        font-size: 16px;
+    }
+
+    .project-details-container p{
+        text-overflow: ellipsis;
+        
+    }
+
 
     h1{
         font-size: 32px;
@@ -803,9 +824,7 @@ footer .copyright{
         font-size: 18px;
         color: #222;
     }
-    #featured-products .pro h4{
-        font-size: 14px;
-    }
+    
 
     h6{
         font-weight: 700;
