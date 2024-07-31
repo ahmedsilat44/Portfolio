@@ -102,3 +102,6 @@ $('#about-a').on('click', function(){scrollFunction('about')});
 $('#projects-a').on('click', function(){scrollFunction('projects')});
 
 
+$('#proj-one-btn').on('click', function(){window.open('https://github.com/sheikhsufyan89/dsa_project', '_blank')});
+
+
