@@ -42,30 +42,34 @@ function removeUnderLine(element,elementId){
   x.classList.remove('underline-right-hover');
 }
 
-const hiddenImg = document.querySelectorAll('.hidden_img');
-
-const hiddenText = document.querySelectorAll('.hidden_text');
 
 
 
-const observerTxt = new IntersectionObserver((entries) => {
-  var heroImg = document.getElementById("heroImg");
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible_img');
-      heroImg.classList.add('visible_img');
-    }
-    else {
-      entry.target.classList.remove('visible_img');
-      heroImg.classList.remove('visible_img');
-    }
+$(document).ready(function() {
+  const hiddenImg = document.querySelectorAll('.hidden_img');
+
+  const hiddenText = document.querySelectorAll('.hidden_text');
+  const observerTxt = new IntersectionObserver((entries) => {
+    var heroImg = document.getElementById("heroImg");
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible_img');
+        heroImg.classList.add('visible_img');
+      }
+      else {
+        entry.target.classList.remove('visible_img');
+        heroImg.classList.remove('visible_img');
+      }
+    });
+  });
+  
+  
+  hiddenText.forEach((element) => {
+    observerTxt.observe(element);
   });
 });
 
 
-hiddenText.forEach((element) => {
-  observerTxt.observe(element);
-});
 
 function toggleMenu(){
   var x = document.getElementById("navbar");
