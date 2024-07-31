@@ -1,3 +1,4 @@
+
 var btn = $('#backToTopButton');
 var navbar = $('#header');
 
@@ -23,6 +24,7 @@ btn.on('click', function(e) {
   e.preventDefault();
   $('html, body').animate({scrollTop:0}, '300');
 });
+
 
 function scrollFunction(elementId) {
     const element = document.getElementById(elementId);
@@ -84,3 +86,15 @@ function removeUnderLine(element,elementId){
   const x = element.querySelector(elementId);
   x.classList.remove('underline-right-hover');
 }
+
+
+$('#closeI').on('click', function(){toggleMenu()});
+
+$('#menuIcon').on('click', function(){toggleMenu()});
+
+
+$('#about-a').on('click', function(){scrollFunction('about')});
+
+$('#projects-a').on('click', function(){scrollFunction('projects')});
+
+
