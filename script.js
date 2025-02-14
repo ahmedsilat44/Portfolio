@@ -104,6 +104,10 @@ $('#projects-a').on('click', function(){scrollFunction('projects')});
 
 $('#proj-one-btn').on('click', function(){window.open('https://github.com/sheikhsufyan89/dsa_project', '_blank')});
 
+$('#proj-two-btn').on('click', function(){window.open('https://purewoodique.com', '_blank')});
+
+$('#proj-three-btn').on('click', function(){window.open('https://github.com/ahmedsilat44/Ledger', '_blank')});
+
 $('#resume-button').on('click', function(){window.open('https://rxresu.me/talisdemha/software-engineer', '_blank')});
 
 
